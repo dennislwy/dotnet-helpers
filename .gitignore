@@ -2,7 +2,8 @@
 bin
 obj
 packages
-.suo 
+*.suo 
+*.v11.suo
 *.pyc
 
 # mstest test results
