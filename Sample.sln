@@ -5,6 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D3763FFF-3B45-4850-BEE1-AD948FB058BE}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		bump.py = bump.py
 		clean.py = clean.py
 		nuget.py = nuget.py
