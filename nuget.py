@@ -1,3 +1,8 @@
+'''
+Created on Nov 2, 2012
+
+@author: Geoff
+'''
 import fnmatch
 import os
 import shutil

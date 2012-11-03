@@ -1,5 +1,5 @@
 '''
-Created on Sep 21, 2011
+Created on Nov 2, 2012
 
 @author: Geoff
 '''
@@ -70,5 +70,3 @@ if __name__ == '__main__':
     else:
         print('Usage: bump.py major[.minor[.revision[.build]]]')
         
-
-    

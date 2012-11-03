@@ -1,3 +1,7 @@
+'''
+@author: nosklo
+Method taken from: http://stackoverflow.com/questions/229186/os-walk-without-digging-into-directories-below
+'''
 import fnmatch
 import os
 import shutil
