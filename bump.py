@@ -53,16 +53,22 @@ def validateVersion(version):
             err = itm + " is not a valid version segment"
             raise Exception(err)
 
+    
+
 if __name__ == '__main__':
     import sys
     import walklevel
     import fnmatch
 
-    version = [1, 0, 0, 0]
+    version = ["1", "0", "0", "0"]
         
     if len(sys.argv) > 1:
-        version = sys.argv[1].split('.')
+        arg = sys.argv[1].split('.')
         
+        for i in range(0,4):
+            if(len(arg) > i):
+                version[i] = arg[i]
+
         validateVersion(version)
         for root, dirNames, filenames in walklevel.walklevel(".\\", level = 2):
             for filename in fnmatch.filter(filenames, "AssemblyInfo.cs"):
