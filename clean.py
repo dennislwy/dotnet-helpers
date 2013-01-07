@@ -19,6 +19,12 @@ if len(sys.argv) == 2:
     
 for root, dirNames, filenames in walklevel.walklevel(".\\", level = 2):
     for dir in fnmatch.filter(dirNames, "bin"):
-        removeDir(os.path.join(root, dir))
+        try:
+            removeDir(os.path.join(root, dir))
+        except:
+            print "Failed: " + os.path.join(root, dir)
     for dir in fnmatch.filter(dirNames, "obj"):
-        removeDir(os.path.join(root, dir))
+        try:
+            removeDir(os.path.join(root, dir))
+        except:
+            print "Failed: " + os.path.join(root, dir)
