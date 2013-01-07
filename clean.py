@@ -13,11 +13,10 @@ def removeDir(path):
     print 'Removing {0}'.format(path)
     shutil.rmtree(path)
 
-maxDepth = 1
+maxDepth = 5
 if len(sys.argv) == 2:
     maxDepth = int(sys.argv[1])
     
-print maxDepth
 for root, dirNames, filenames in walklevel.walklevel(".\\", level = maxDepth):
     for dir in fnmatch.filter(dirNames, "bin"):
         try:
